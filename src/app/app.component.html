@@ -1,3 +1,21 @@
 <div>
 <img src="../favicon.ico" alt="Logo Not Found" style="margin-left: auto;margin-right: auto;display:block"/>
+<h1>This is my first APP!</h1>
+<!-- <h2 *ngIf="show==true; then ashit else amit"></h2> -->
 </div>
+
+<div [ngSwitch]="show">
+    <h3 *ngSwitchCase="'ashit'">Ashit Singh</h3>
+    <h3 *ngSwitchCase="'amit'">Amit Singh</h3>
+</div>
+<table style="border: 1px;">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor="let user of data">
+        <td>{{user.name}}</td>
+        <td>{{user.age}}</td>
+    </tr>
+
+</table>

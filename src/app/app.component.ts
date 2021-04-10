@@ -7,5 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Search-App';
-  date = new Date();
+  show = 'amit';
+  data = [
+    {
+      name:'Amit Kumar Singh',
+      age:"30"
+    },{
+      name:'Ashit Kumar Singh',
+      age:"26"
+    }
+  ];
 }
